@@ -1,4 +1,3 @@
-import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -63,7 +62,7 @@ class SGD extends Optimizer {
 class Momentum extends Optimizer {
     private final double eta;
     private final double beta;
-    // Stores previous gradients for each layer in this ArrayList for momentum. First index denotes
+    // Stores previous gradients for each layer in this HashMap for momentum. First index denotes
     private final HashMap<Matrix, Matrix> memory = new HashMap<>();
 
     /**
@@ -125,7 +124,7 @@ class ADAM extends Optimizer {
     private final double beta2;
     private final double epsilon;
     private int i = 0; // Iteration count
-    // Stores previous gradients in these ArrayLists for momentum.
+    // Stores previous gradients in these HashMaps for momentum.
     private final HashMap<Matrix, Matrix> mMemory = new HashMap<>();
     private final HashMap<Matrix, Matrix> sMemory = new HashMap<>();
 
