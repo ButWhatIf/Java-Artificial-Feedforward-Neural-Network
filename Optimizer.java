@@ -8,7 +8,6 @@ import java.util.HashMap;
  * Ordinary Gradient Descent "SGD"
  * Momentum Gradient Descent "Momentum"
  * AdaGrad "AdaGrad"
- * RMSProp "RMSProp"
  * Adaptive Momentum Estimation "Adam"
  */
 abstract class Optimizer {
@@ -209,7 +208,7 @@ class ADAGrad extends Optimizer {
     }
 
     /**
-     * Momentum gradient descent algorithm. The HashMap instance "memory" stores the old values of the momentum matrix
+     * ADAGrad gradient descent algorithm. The HashMap instance "memory" stores the old values of the momentum matrix
      * for a given matrix. Since we always feed the output of this method back into itself in the next epoch, we can
      * set the key to access this old value of m as the output of the method itself. If the key does not exist
      * (i.e., running through the first epoch), we create the new key-value mapping. Once we no longer need the old
