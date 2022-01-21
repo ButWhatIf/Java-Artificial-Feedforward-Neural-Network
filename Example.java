@@ -9,7 +9,7 @@ public class Example {
         // Setting activations for the hidden and output layers
         toy.setActivations(new Sigmoid(), new Sigmoid(), new Linear());
         // Loading the training dataset
-        toy.importData("C:\\IdeaProjects\\mydata.txt");
+        toy.importData("C:\\training_sample.txt");
 
         /*
         Training the MLP for 50,000 batches using a mini-batch momentum gradient descent with learning rate
@@ -18,7 +18,7 @@ public class Example {
         toy.train(50000, new Momentum(0.001, 0.90), 10, new MeanAverageError());
 
         // Writing the predicted outputs using this.predict() to a file to compare
-        PrintWriter printer = new PrintWriter("C:\\IdeaProjects\\tests.txt");
+        PrintWriter printer = new PrintWriter("C:\\computer_predicted.txt");
         for (int i = -10; i < 10; i++) {
             printer.println((double) i/2 + "," + toy.predict(Double.toString((double) i / 2)));
         }
