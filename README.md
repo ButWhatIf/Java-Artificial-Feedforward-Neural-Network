@@ -4,9 +4,10 @@ and eight activation functions. All the optimizers are gradient descent based, t
 Currently I do not have plans to write the Nesterov variants of each optimizer. See the "example" program to see how to implement this program on an example 
 training set, where I train this NN using the data in "training_sample.txt", and write the outputs to "computer_predicted.txt". 
 
-Future commits:
+Future improvements/expansions:
+- Ability to import and export models
 - Additional loss functions (in particular, Binary Cross Entropy and Hubert)
 - RMSProp gradient descent algorithm
-- Particle swarm optimization algorithm.
+- Particle swarm optimization algorithm
 
 Current issues: ADAM is currently performing worse than vanilla SGD and momentum gradient descents, but more testing is required to determine if this is due to sample "allergic" data or simply faulty implementation. 
