@@ -18,3 +18,6 @@
 3.5,12.25
 4.0,16.0
 4.5,20.25
+
+
+## Training on the function f(x) = x^2.
