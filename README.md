@@ -2,7 +2,7 @@
 All the classes generate a dense, feedforward neural network in Java. There is currently support for two loss functions, four optimizers,
 and eight activation functions. All the optimizers are gradient descent based, though particle swarm is a feature I would like to implement in the future. 
 Currently I do not have plans to write the Nesterov variants of each optimizer. See the "example" program to see how to implement this program on an example 
-training set, where I train this NN using "training_example.txt", and write the outputs t
+training set, where I train this NN using the data in "training_sample.txt", and write the outputs to "computer_predicted.txt". 
 
 Future commits:
 - Additional loss functions (in particular, Binary Cross Entropy and Hubert)
