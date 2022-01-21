@@ -1,7 +1,7 @@
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class Main {
+public class Example {
 
     public static void main(String[] args) throws IOException {
         // Creating a MLP with 1 input, 1 output, and 2 hidden layers with 64 and 32 nodes respectively
